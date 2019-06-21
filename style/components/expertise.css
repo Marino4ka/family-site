@@ -1,0 +1,23 @@
+.expertise {
+	width: 100%;
+	padding: 50px 5%;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+	.expertise__header {
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.expertise__img {
+		width: 100%;
+		padding: 20px 100px;
+	}
+
+	.expertise__img img {
+		width: 100%;
+		}
+				

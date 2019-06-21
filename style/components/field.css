@@ -1,0 +1,43 @@
+.form {
+	width: 100%;
+	padding-top: 50px;
+}
+
+	.form__field {
+		width: 300px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		margin-bottom: 15px;
+	}
+
+	.form__field:last-child {
+		width: 30%;
+		border: none;
+		margin: 0 auto;
+	}
+
+.form__title {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	}
+}
+
+/*.field {
+	width: 270px;
+	color: #808080;
+	font-size: 15px;
+	border: 1px solid #808080;
+	border-radius: 5px;
+	padding: 10px 0 10px 5px;
+	margin-top: 30px;
+}
+
+.field_message {
+	padding-bottom: 80px;
+}
+
+	.field__footer {
+		width: 250px;
+		border: 1px solid #39C732;
+		color: #fff;
+	}*/

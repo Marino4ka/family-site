@@ -1,0 +1,27 @@
+.nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+	.nav_header {
+		color: #e6d13b;
+	}
+
+	.nav__link {
+		padding: 10px 20px 10px 0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+
+	.nav__link:hover {
+		color: #47c7dc;
+		transition: 0.3s ease-in;
+	}
+
+@media screen and (max-width: 1024px) {
+	.nav_header {
+		display: none;
+	}

@@ -1,0 +1,28 @@
+.input {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	
+}
+
+.input_field {
+	padding: 10px 15px;
+}
+
+.input_field_msg {
+	margin-bottom: 120px;
+}
+
+.input_footer {
+	padding: 10px 15px;
+	color: #fff;
+} 
+
+.input_footer::-webkit-input-placeholder {color: #e6d13b; font-weight: bold;}
+
+@media screen and (max-width: 1023px) {
+	.input_field_msg {
+		margin-bottom: 80px;
+	}
+}

@@ -1,0 +1,24 @@
+.btn {
+	width: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+		
+	.btn_form{
+		color: #fff;
+		background-color: darkgreen;
+		padding: 10px 15px;
+		cursor: pointer;
+		border-radius: 5px;
+		font-size: 15px;
+		text-transform: uppercase;
+		}
+
+
+@media screen and (max-width: 1023px) {
+/*	.btn {
+		display: none;
+	}*/
+}

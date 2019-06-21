@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/all.css">
+</head>
+<body>
+	<section class="aside" id="aside">
+		<div class="aside__iner">
+			<div class="aside__logo"><img src="images/widgets/logo.svg"></div>
+			<div class="aside__list">
+				<li class="aside__list__item">Home</li>
+				<li class="aside__list__item">About</li>
+				<li class="aside__list__item">Expertise</li>
+				<li class="aside__list__item">Teams</li>
+				<li class="aside__list__item">Works</li>
+				<li class="aside__list__item">People Say</li>
+				<li class="aside__list__item">Contact</li>
+			</div>
+		</div>	
+	</section>
+	<section class="aside__backdrop" id="aside-backdrop" onclick="toggleAside('hide')">	
+	</section>
+
+	<header class="header header_sizeM">
+		<img class="header__menu" src="images/widgets/menu.svg" onclick="toggleAside('show')">
+		<div class="header__logo-and-name">
+			<div class="header__logo-and-name__logo">
+				<img src="images/widgets/logo.svg">
+			</div>
+			<div class="header__logo-and-name__name">IOVBAK</div>
+		</div>
+		<div class="nav nav_header">
+			<div class="nav__link nav__link_header" onclick="scrollToDiv('main')">
+				Home
+			</div>
+			<div class="nav__link nav__link_header" onclick="scrollToDiv('story')">
+				About
+			</div>
+			<div class="nav__link nav__link_header" onclick="scrollToDiv('expertise')">
+				Expertise
+			</div>
+			<div class="nav__link nav__link_header" onclick="scrollToDiv('team')">
+				Teams
+			</div>
+			<div class="nav__link nav__link_header" onclick="scrollToDiv('works')">
+				Works
+			</div>
+			<div class="nav__link nav__link_header" onclick="scrollToDiv('clients')">
+				People say
+			</div>	
+			<div class="nav__link nav__link_header" onclick="scrollToDiv('footer')">
+				Contact
+			</div>
+		</div>
+	</header>
+<!-- 	<section class ="main" id="main">
+		<div class="bg__opacity"></div>
+		<div class="main__background"></div>
+		<div class="main__text main__text_home">
+			<div class="main__title">This is my Family Site</div>
+			<div class="main__line"></div>
+			<div class="main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </div>
+			<div class="link">Learn More</div>
+			<div class="carousel">
+				<div class="carousel__switch"></div>
+				<div class="carousel__switch"></div>
+				<div class="carousel__switch"></div>
+				<div class="carousel__switch"></div>
+			</div>
+		</div>
+	</section> -->
+
+	<section class="main" id="main">
+		<div class="slider-arrow slider-arrow_left"
+			onclick="goBack();">
+			<img src="images/widgets/arrow.svg">
+		</div>
+		<div class="slider-arrow slider-arrow_right"
+			onclick="goNext();">
+			<img src="images/widgets/arrow.svg">
+
+		</div>
+		<div class="slider" id="slider">
+			<div class="slider__slide">
+				<div class="bg-opacity"></div>
+				<div class="slide__title">This is my Family Site</div>
+				<div class="main__line"></div>
+				<div class="slide__subtitle">Lorem ipsum dolor sit amet </div>
+				<div class="link">Learn More</div>
+			</div>
+			<div class="slider__slide slider__slide_2">
+				<div class="bg-opacity"></div>
+				<div class="slide__title">Iovbak</div>
+				<div class="main__line"></div>
+				<div class="slide__subtitle">Lorem ipsum dolor sit </div>
+				<div class="link">Learn More</div>
+			</div>
+			<div class="slider__slide slider__slide_3">
+				<div class="bg-opacity"></div>
+				<div class="slide__title">This is my Family Site</div>
+				<div class="main__line"></div>
+				<div class="slide__subtitle">Lorem ipsum dolor </div>
+				<div class="link">Learn More</div>
+			</div>
+		</div>
+	</section>
+	<section class="story" id="story">
+		<div class="story__top">
+			<div class="story__img">
+				<img src="images/widgets/story.svg">
+			</div>
+			<div class="story__text">
+				<div class="title">Our Family Story</div>
+				<div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</div>
+				<div class="link link_story">Learn more</div>
+			</div>
+		</div>
+		<div class="story__bottom">
+			<div class="bg__opacity">
+			</div>
+			<div class="story__bottom_img">
+			</div>
+		</div>
+	</section>
+	<section class="expertise" id="expertise">
+		<div class="expertise__header">
+			<div class="title">We are the best</div>
+			<div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+			<div class="main__line"></div>
+		</div>
+		<div class="grid">
+			<div class="grid__item">
+				<div class="expertise__img"><img src="images/widgets/cake.svg"></div>
+				<div class="title">party-goers</div>
+				<div class="subtitle">Lorem ipsum dolor sit amet</div>
+			</div>
+			<div class="grid__item">
+				<div class="expertise__img"><img src="images/widgets/car.svg"></div>
+				<div class="title">racers</div>
+				<div class="subtitle">Lorem ipsum dolor sit amet</div>
+			</div>
+			<div class="grid__item">
+				<div class="expertise__img"><img src="images/widgets/vinyl.svg"></div>
+				<div class="title">dancers</div>
+				<div class="subtitle">Lorem ipsum dolor sit amet</div>
+			</div>		
+		</div>
+		<div class="grid">
+			<div class="grid__item">
+				<div class="expertise__img"><img src="images/widgets/ball.svg"></div>
+				<div class="title">Players</div>
+				<div class="subtitle">Lorem ipsum dolor sit amet</div>
+			</div>
+			<div class="grid__item">
+				<div class="expertise__img"><img src="images/widgets/paint.svg"></div>
+				<div class="title">Artists</div>
+				<div class="subtitle">Lorem ipsum dolor sit amet</div>
+			</div>
+			<div class="grid__item">
+				<div class="expertise__img"><img src="images/widgets/food.svg"></div>
+				<div class="title">Chefs</div>
+				<div class="subtitle">Lorem ipsum dolor sit amet</div>
+			</div>		
+		</div>
+	</section>
+	<section class="team" id="team">
+		<div class="main__background main__background_team"></div>
+		<div class="bg__opacity"></div>
+		<div class="main__text">
+			<div class="main__text main__title">Meet the team</div>
+			<div class="main__text main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			<div class="main__line main__line_white"></div>
+		</div>
+		<div class="grid grid_team">
+			<div class="grid__item">
+				<div class="team__img team__img_1"></div>
+				<div class="team__text">
+					<div class="team__title">Elina</div>
+					<div class="team__subtitle">consectetur adipiscing elit</div>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="team__img team__img_2"></div>
+				<div class="team__text">
+					<div class="team__title">Roman & Daddy</div>
+					<div class="team__subtitle">consectetur adipiscing elit</div>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="team__img team__img_3"></div>
+				<div class="team__text">
+					<div class="team__title">Grandparents</div>
+					<div class="team__subtitle">consectetur adipiscing elit</div>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="team__img team__img_4"></div>
+				<div class="team__text">
+					<div class="team__title">Mommy</div>
+					<div class="team__subtitle">consectetur adipiscing elit</div>
+				</div>
+			</div>	
+		</div>
+		<div class="main__text">
+			<div class="main__subtitle main__subtitle_team">Lorem ipsum dolor sit amet, consectetur adipiscing </div>
+		<div class="link">Learn More</div>		
+	</section>
+	<section class="works" id="works">
+		<div class="works__top">
+			<div class="works__ell">
+			<div class="title">OUR WORKS</div>
+			</div>
+			<div class="works__ell">
+			<div class="works__subtitle">See All Projects ></div>
+			</div>
+		</div>
+		<div class="grid__square">
+			<div class="square square__1"></div>
+			<div class="square square__2"></div>
+			<div class="square square__3"></div>
+			<div class="square square__4"></div>
+			<div class="square square__1"></div>
+			<div class="square square__2"></div>
+		</div>
+		<div class="grid__square">
+			<div class="square square__2"></div>
+			<div class="square square__1"></div>
+			<div class="square square__4"></div>
+			<div class="square square__3"></div>
+			<div class="square square__2"></div>
+			<div class="square square__1"></div>
+		</div>
+		<div class="works__bottom">
+			<div class="link">Learn More</div>
+		</div>
+	</section>
+	<section class="people-say">
+		<div class="main__background main__background_people-say"></div>
+		<div class="bg__opacity"></div>
+		<div class="main__text">
+		<div class="main__text main__title">"</div>
+		<div class="main__text main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+		<div class="title title_white">Title</div>
+		<div class="main__text main__subtitle">Lorem ipsum dolor sit amet</div>
+		<div class="carousel carousel_people">
+			<div class="carousel__arrow"><</div>
+			<div class="carousel__switch carousel__switch_people">
+				<div class="carousel__bg carousel__bg_1"></div>
+			</div>
+			<div class="carousel__switch carousel__switch_people">
+				<div class="carousel__bg carousel__bg_2"></div>
+			</div>
+			<div class="carousel__switch carousel__switch_center">
+				<div class="carousel__bg carousel__bg_3"></div>
+			</div>
+			<div class="carousel__switch carousel__switch_people">
+				<div class="carousel__bg carousel__bg_4"></div>
+			</div>
+			<div class="carousel__switch carousel__switch_people">
+				<div class="carousel__bg carousel__bg_5"></div>
+			</div>
+			<div class="carousel__arrow">></div>
+		</div>		
+	</section>
+	<section class="clients" id="clients">
+		<div class="clients__side">
+			<div class="form__title"> <div class="title">Contact santa</div></div>	
+			<form class="form">
+				<fieldset class="form__field">
+					<input type="text" class="input input_field"
+					placeholder="Name">
+				</fieldset>
+				<fieldset class="form__field">
+					<input type="text" class="input input_field"
+					placeholder="Email">
+				</fieldset>
+				<fieldset class="form__field">
+					<input type="text" class="input input_field"
+					placeholder="Subject">
+				</fieldset>
+				<fieldset class="form__field">
+					<input type="text" class="input input_field input_field_msg"
+					placeholder="Message">
+				</fieldset>
+
+				<fieldset class="form__field">
+					<button class="btn btn_form">Submit</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="clients__side clients__side_right">
+			<div class="title">Choose options</div>
+			<div class="logo__container">
+				<div class="clients__logo">
+					<div class="clients__img clients__img_1"></div>
+					<div class="clients__img clients__img_2"></div>
+					<div class="clients__img clients__img_3"></div>
+					<div class="clients__img clients__img_4"></div>
+				</div>
+				<div class="clients__logo">
+					<div class="clients__img clients__img_5"></div>
+					<div class="clients__img clients__img_6"></div>
+					<div class="clients__img clients__img_7"></div>
+					<div class="clients__img clients__img_8"></div>	
+				</div>
+			</div>
+	</section>
+	<section class="footer" id="footer">
+		<div class="main__background main__background_footer"></div>
+		<div class="bg__opacity"></div>
+		<div class="footer__item">
+			<div class="header__logo-and-name">
+				<div class="header__logo-and-name__logo">
+				<img src="images/widgets/logo.svg">
+			</div>
+			<div class="header__logo-and-name__name">NAME</div>
+			</div>
+			<div class="footer__contact__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			<div class="nav">
+			<div class="nav__link">Help</font></div>
+			<div class="nav__link">Home</div>
+			<div class="nav__link">Privacy</div>
+		</div>
+		</div>
+		<div class="footer__item">
+			<div class="title title_white">Our Home Adress</div>
+			<div class="footer__contact">
+				<div class="footer__icon icon__bg_1"></div>
+				<div class="footer__contact__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+			</div>
+			<div class="footer__contact">
+				<div class="footer__icon icon__bg_2"></div>
+				<div class="footer__contact__text">+7 776 001 44 35</div>
+			</div>
+		</div>
+		<div class="footer__item">
+			<div class="title title_white">Stay in touch</div>
+			<div class="footer__contact">
+				<fieldset class="form__field form__footer">
+					<input type="text" class="input input_footer" placeholder="Logg In">
+				</fieldset>
+				<div class="footer__subscribe"><div class="footer__ok"></div></div>
+			</div>
+			<div class="footer__grid-socials">
+				<div class="footer__icon-socials">
+					<div class="icon-socials__bg icon-socials__bg_1"></div>
+				</div>
+				<div class="footer__icon-socials">
+					<div class="icon-socials__bg icon-socials__bg_2"></div>
+				</div>
+				<div class="footer__icon-socials">
+					<div class="icon-socials__bg icon-socials__bg_3"></div>
+				</div>
+				<div class="footer__icon-socials">
+					<div class="icon-socials__bg icon-socials__bg_4"></div>
+				</div>
+				<div class="footer__icon-socials">
+					<div class="icon-socials__bg icon-socials__bg_5"></div>
+				</div>
+				<div class="footer__icon-socials">
+					<div class="icon-socials__bg icon-socials__bg_6"></div>
+				</div>
+			</div>
+			<div class="footer__creator">
+				<div><span style="color: #FFD800; font-size: 15px;">Marina Iovbak</span></div>
+				<div><span style="color: #50aad4; font-size: 15px;">2017</span>Almaty </div>
+			</div>
+		</div>	
+	</section>                                                           
+</body>
+<script type="text/javascript" src="js/aside.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+
+</html>
